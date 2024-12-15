@@ -96,8 +96,8 @@
 
         nav {
             bindings = <
-&kp TAB     &kp N1     &kp N2    &kp N3    &kp N4    &kt DELETE     &kt LEFT_BRACKET  &kt UP_ARROW    &kt RIGHT_BRACKET  &trans
-&kp ESCAPE  &kp LCTRL  &kp LALT  &kp LCMD  &kp N0    &kt BACKSPACE  &kt LEFT          &kt DOWN_ARROW  &kt RIGHT          &trans
+&kp TAB     &kp N1     &kp N2    &kp N3    &kp N4    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &trans
+&kp ESCAPE  &kp LCTRL  &kp LALT  &kp LCMD  &kp N0    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
 &kp LSHIFT  &trans     &trans    &trans    &trans    &trans         &trans            &trans          &trans             &trans
                                  &trans    &trans    &trans         &trans
             >;
