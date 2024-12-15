@@ -63,7 +63,7 @@
 &kp Q             &kp W        &kp E       &kp R             &kp T          &kp Y        &kp U       &kp I       &kp O                &kp P
 &kp A             &ht LCTRL S  &ht LALT D  &ht LGUI F        &kp G          &kp H        &ht RGUI J  &ht RALT K  &ht RIGHT_CONTROL L  &lt 4 SEMICOLON
 &ht LEFT_SHIFT Z  &kp X        &kp C       &kp V             &kp B          &kp N        &kp M       &kp COMMA   &kp DOT              &ht RIGHT_SHIFT SINGLE_QUOTE
-                                           &kt LEFT_COMMAND  &lt 1 SPACE    &lt 2 ENTER  &kp RALT
+                                           &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 ENTER  &kp RALT
             >;
         };
 
@@ -87,17 +87,17 @@
 
         tri_layer {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &kt LANG1       &kt K_LOCK    &kp C_MUTE    &kp C_PREV
+&kp F1  &kp F2   &kp F3   &kp F4   &bt BT_SEL 0    &bt BT_SEL 2  &kp LANG1       &kp K_LOCK    &kp C_MUTE    &kp C_PREV
 &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 1    &bt BT_SEL 3  &kp LANG2       &kp C_BRI_UP  &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &out OUT_TOG  &kp LANG3       &kt C_BRI_DN  &kp C_VOL_DN  &kp C_NEXT
+&kp F9  &kp F10  &kp F11  &kp F12  &bt BT_CLR      &out OUT_TOG  &kp LANG3       &kp C_BRI_DN  &kp C_VOL_DN  &kp C_NEXT
                           &trans   &trans          &trans        &trans
             >;
         };
 
         nav {
             bindings = <
-&kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kt DELETE     &kt LEFT_BRACKET  &kt UP_ARROW    &kt RIGHT_BRACKET  &trans
-&kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kt BACKSPACE  &kt LEFT          &kt DOWN_ARROW  &kt RIGHT          &trans
+&kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &trans
+&kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
 &trans    &trans    &trans    &trans    &trans    &trans         &trans            &trans          &trans             &trans
                               &trans    &trans    &trans         &trans
             >;
