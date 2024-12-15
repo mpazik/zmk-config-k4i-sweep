@@ -1,8 +1,8 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2500  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1000  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 15    // 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -69,8 +69,8 @@
 
         left_layer {
             bindings = <
-&kp TAB     &kp N7  &kp N8  &kp N9        &bootloader    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp MINUS
-&kp ESCAPE  &kp N4  &kp N5  &kp N6        &kp N0         &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PLUS
+&kp TAB     &kp N7  &kp N8  &kp N9        &bootloader    &mmv SCRL_UP    &mmv SCRL_LEFT  &mmv MOVE_UP    &mmv SCRL_RIGHT  &kp MINUS
+&kp ESCAPE  &kp N4  &kp N5  &kp N6        &kp N0         &mmv SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PLUS
 &kp LSHIFT  &kp N1  &kp N2  &kp N3        &kp ENTER      &kp COMMA       &mkp MB4        &mkp MCLK       &mkp MB5         &kp KP_ASTERISK
                             &ht LCMD DOT  &trans         &mkp LCLK       &mkp RCLK
             >;
