@@ -4,11 +4,14 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 15    // 10
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -25,6 +28,7 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
@@ -35,6 +39,7 @@
             label = "hold_tap_strong";
             compatible = "zmk,behavior-hold-tap";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             global-quick-tap;
@@ -43,7 +48,8 @@
         hlt: hold_tap_layer {
             label = "hold_tap_layer";
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&kp>, <&lt>;
+            bindings = <&lt>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <500>;
             quick-tap-ms = <400>;
@@ -79,7 +85,7 @@
 &kp Q             &kp W        &kp E       &kp R                     &kp T           &kp Y         &kp U          &kp I       &kp O                &kp P
 &kp A             &ht LCTRL S  &ht LALT D  &ht LGUI F                &kp G           &kp H         &ht RGUI J     &ht RALT K  &ht RIGHT_CONTROL L  &lt 4 SEMICOLON
 &ht LEFT_SHIFT Z  &kp X        &kp C       &kp V                     &kp B           &kp N         &kp M          &kp COMMA   &kp DOT              &ht RIGHT_SHIFT SINGLE_QUOTE
-                                           &ht LEFT_COMMAND ESCAPE  &lt SPACE 1    &lt ENTER 2  &ht RALT TAB
+                                           &hts LEFT_COMMAND ESCAPE  &hlt 1 SPACE    &hlt 2 ENTER  &hts RALT TAB
             >;
         };
 
@@ -88,7 +94,7 @@
 &kp TAB     &kp N7  &kp N8  &kp N9         &bootloader    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp MINUS
 &kp ESCAPE  &kp N4  &kp N5  &kp N6         &kp N0         &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PLUS
 &kp LSHIFT  &kp N1  &kp N2  &kp N3         &kp ENTER      &kp COMMA       &mkp MB4        &mkp MCLK       &mkp MB5         &kp KP_ASTERISK
-                            &ht LCMD DOT  &trans         &mkp LCLK       &mkp RCLK
+                            &hts LCMD DOT  &trans         &mkp LCLK       &mkp RCLK
             >;
         };
 
