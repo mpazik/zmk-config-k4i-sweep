@@ -89,7 +89,7 @@
 
         right_layer {
             bindings = <
-&kp N1          &kp N2     &kp N3        &kp N4    &kp N5      &kt N6        &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp N1          &kp N2     &kp N3        &kp N4    &kp N5      &kp N6        &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp TILDE       &kp LCTRL  &kp LEFT_ALT  &kp LCMD  &kp CAPS    &kp ASTERISK  &kp MINUS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT
 &kp LEFT_SHIFT  &kp CARET  &none         &none     &none       &kp EQUAL     &kp UNDER  &kp COMMA             &kp PERIOD             &kp SLASH
                                          &trans    &trans      &trans        &trans
