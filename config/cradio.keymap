@@ -80,10 +80,10 @@
 
         left_layer {
             bindings = <
-&bootloader  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT    &kp MINUS      &kp N7  &kp N8  &kp N9  &trans
-&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS       &kp N4  &kp N5  &kp N6  &trans
-&kp LSHIFT   &mkp MB5        &mkp MCLK       &mkp MB4           &kp N0         &kp N1  &kp N2  &kp N3  &trans
-                             &mkp RCLK       &mkp LCLK          &trans         &ht LCMD DOT
+&bootloader  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT    &msc SCRL_UP   &kp MINUS      &kp N7  &kp N8  &kp N9  &trans
+&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN &kp PLUS       &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&kp LSHIFT   &mkp MB5        &mkp MCLK       &mkp MB4           &trans         &kp N0         &kp N1  &kp N2  &kp N3  &kp SLASH
+                                             &mkp RCLK          &mkp LCLK      &trans         &ht LCMD DOT
             >;
         };
 
@@ -107,9 +107,9 @@
 
         nav {
             bindings = <
-&kp N1      &kp N2     &kp N3    &kp N4    &kp N5    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &bootloader
-&kp ESCAPE  &kp LCTRL  &kp LALT  &kp LCMD  &kp N0    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
-&kp LSHIFT  &trans     &trans    &trans    &trans    &trans         &trans            &trans          &trans             &trans
+&kp TAB     &trans     &trans    &trans    &trans    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &bootloader
+&kp ESCAPE  &trans     &trans    &trans    &trans    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
+&kp LSHIFT  &kp LCTRL  &trans    &trans    &trans    &trans         &trans            &trans          &trans             &trans
                                  &trans    &trans    &trans         &trans
             >;
         };
