@@ -74,7 +74,7 @@
 &kp Q             &kp W               &kp E  &kp R                &kp T                     &kp Y         &kp U         &kp I      &kp O                     &kp P
 &lt 1 A           &kp S               &kp D  &kp F                &kp G                     &kp H         &kp J         &kp K      &kp L                     &lt 4 SEMICOLON
 &ht LEFT_SHIFT Z  &ht LEFT_CONTROL X  &kp C  &kp V                &kp B                     &kp N         &kp M         &kp COMMA  &ht RIGHT_CONTROL PERIOD  &ht RIGHT_SHIFT SINGLE_QUOTE
-                                             &ht LEFT_ALT ESCAPE  &ht LEFT_COMMAND SPACE    &ht 2 ENTER  &ht RALT TAB
+                                             &ht LEFT_ALT ESCAPE  &ht LEFT_COMMAND SPACE    &lt 2 ENTER  &ht RALT TAB
             >;
         };
 
