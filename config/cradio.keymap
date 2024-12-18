@@ -10,9 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -83,10 +80,10 @@
 
         left_layer {
             bindings = <
-&bootloader  &kp N7  &kp N8  &kp N9        &bootloader    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &kp MINUS
-&kp ESCAPE   &kp N4  &kp N5  &kp N6        &kp N0         &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PLUS
-&kp LSHIFT   &kp N1  &kp N2  &kp N3        &kp ENTER      &kp COMMA       &mkp MB4        &mkp MCLK       &mkp MB5         &kp KP_ASTERISK
-                             &ht LCMD DOT  &trans         &mkp LCLK       &mkp RCLK
+&bootloader  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT    &kp MINUS      &kp N7  &kp N8  &kp N9  &trans
+&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &kp PLUS       &kp N4  &kp N5  &kp N6  &trans
+&kp LSHIFT   &mkp MB5        &mkp MCLK       &mkp MB4           &kp N0         &kp N1  &kp N2  &kp N3  &trans
+                             &mkp RCLK       &mkp LCLK          &trans         &ht LCMD DOT
             >;
         };
 
