@@ -8,8 +8,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define MAC 0
 #define WIN 1
@@ -71,19 +73,19 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W               &kp E                 &kp R           &kp T               &kp Y         &kp U         &kp I      &kp O                     &kp P
-&lt 5 A           &kp S               &kp D                 &kp F           &kp G               &kp H         &kp J         &kp K      &kp L                     &lt 4 SEMICOLON
-&ht LEFT_SHIFT Z  &ht LEFT_CONTROL X  &ht LEFT_ALT C        &kp V           &kp B               &kp N         &kp M         &kp COMMA  &ht RIGHT_CONTROL PERIOD  &ht RIGHT_SHIFT SINGLE_QUOTE
-                                                   &ht LEFT_COMMAND ESCAPE  &lt 1 SPACE         &lt 2 ENTER  &ht RALT TAB
+&kp Q             &kp W               &kp E           &kp R                    &kp T          &kp Y        &kp U         &kp I      &kp O                     &kp P
+&lt 5 A           &kp S               &kp D           &kp F                    &kp G          &kp H        &kp J         &kp K      &kp L                     &lt 4 SEMICOLON
+&ht LEFT_SHIFT Z  &ht LEFT_CONTROL X  &ht LEFT_ALT C  &kp V                    &kp B          &kp N        &kp M         &kp COMMA  &ht RIGHT_CONTROL PERIOD  &ht RIGHT_SHIFT SINGLE_QUOTE
+                                                      &ht LEFT_COMMAND ESCAPE  &lt 1 SPACE    &lt 2 ENTER  &ht RALT ESC
             >;
         };
 
         left_layer {
             bindings = <
-&kp TAB      &none                &none        &none      &none          &msc SCRL_UP       &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT    &trans
-&kp ESCAPE   &none                &none        &none      &none          &msc SCRL_DOWN     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans
-&kp LSHIFT   &kp LEFT_CONTROL     &kp LEFT_ALT &none      &none          &none              &mkp MB5        &mkp MCLK       &mkp MB4           &trans
-                                               &trans     &trans         &mkp LCLK          &mkp RCLK
+&kp TAB     &none             &none         &none   &none     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans
+&kp ESCAPE  &none             &none         &none   &none     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&kp LSHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &none   &none     &none           &mkp MB5        &mkp MCLK       &mkp MB4         &trans
+                                            &trans  &trans    &mkp LCLK       &mkp RCLK
             >;
         };
 
@@ -107,19 +109,19 @@
 
         nav {
             bindings = <
-&kp TAB     &trans     &trans    &trans    &trans    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &bootloader
-&kp ESCAPE  &trans     &trans    &trans    &trans    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
-&kp LSHIFT  &kp LCTRL  &trans    &trans    &trans    &trans         &trans            &trans          &trans             &trans
-                                 &trans    &trans    &trans         &trans
+&kp TAB     &trans     &trans  &trans  &trans    &kp DELETE     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &bootloader
+&kp ESCAPE  &trans     &trans  &trans  &trans    &kp BACKSPACE  &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &trans
+&kp LSHIFT  &kp LCTRL  &trans  &trans  &trans    &trans         &trans            &trans          &trans             &trans
+                               &trans  &trans    &trans         &trans
             >;
         };
 
         left_layer_2 {
             bindings = <
-&bootloader  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT    &msc SCRL_UP   &kp MINUS      &kp N7  &kp N8  &kp N9  &trans
-&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN &kp PLUS       &kp N4  &kp N5  &kp N6  &kp ASTERISK
-&kp LSHIFT   &mkp MB5        &mkp MCLK       &mkp MB4           &trans         &kp N0         &kp N1  &kp N2  &kp N3  &kp SLASH
-                                             &mkp RCLK          &mkp LCLK      &trans         &ht LCMD DOT
+&bootloader  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &kp MINUS  &kp N7        &kp N8  &kp N9  &trans
+&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PLUS   &kp N4        &kp N5  &kp N6  &kp ASTERISK
+&kp LSHIFT   &mkp MB5        &mkp MCLK       &mkp MB4         &trans            &kp N0     &kp N1        &kp N2  &kp N3  &kp SLASH
+                                             &mkp RCLK        &mkp LCLK         &trans     &ht LCMD DOT
             >;
         };
     };
